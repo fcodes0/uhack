@@ -21,11 +21,12 @@ function displayResults(results) {
   });
 }
 
-search("laptop");
-const searchButton = document.getElementById("search-bar");
+//search("laptop");
+const searchButton = document.getElementById("image-button");
 
 searchButton.addEventListener("click", function () {
   const query = document.getElementById("search-bar").value;
+  search(query);
 });
 //searchBar.addEventListener("input", () => {
 //const searchTerm = searchBar.value.toLowecrCase().trim();
