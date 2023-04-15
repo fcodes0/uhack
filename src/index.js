@@ -21,6 +21,12 @@ function displayResults(results) {
   });
 }
 
+search("laptop");
+const searchButton = document.getElementById("search-bar");
+
+searchButton.addEventListener("click", function () {
+  const query = document.getElementById("search-bar").value;
+});
 //searchBar.addEventListener("input", () => {
 //const searchTerm = searchBar.value.toLowecrCase().trim();
 //fetch("links.csv")
