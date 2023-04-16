@@ -28,28 +28,3 @@ searchButton.addEventListener("click", function () {
   const query = document.getElementById("search-bar").value;
   search(query);
 });
-//searchBar.addEventListener("input", () => {
-//const searchTerm = searchBar.value.toLowecrCase().trim();
-//fetch("links.csv")
-//.then((response) => response.text())
-//.then((data) => {
-//const rows = data.trim().split("\n");
-//const headers = rows.shift().split(",");
-//const filteredPages = rows
-//.map((row) => {
-//const values = row.split(",");
-//return {
-//title: values[0].trim(),
-//link: values[1].trim(),
-//bio: values[2].trim(),
-//};
-//})
-//.filter((page) => {
-//const titleMatches = page.title.toLowerCase().includes(searchTerm);
-//const bioMatches = page.bio.toLowerCase().includes(searchTerm);
-//return titleMatches || bioMatches;
-//});
-//displayResults(filteredPages);
-//})
-//.catch((error) => console.error("Error reading links file:", error));
-//});

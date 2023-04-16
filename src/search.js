@@ -32,6 +32,21 @@ export default function search(query) {
   vendorlist.forEach((url) => {
     let encodedQuery = encodeURIComponent(`site:${url} ${query}`);
     let queryURL = `${baseSearchUrl}${encodedQuery}`;
-    console.log(queryURL);
+    let iframe = document.getElementById("searchResultsFrame");
+    iframe.src = queryURL;
+
+    ////console.log(queryURL);
+    //let proxyUrl = `https://cors-anywhere.herokuapp.com/${queryURL}`;
+    ////console.log(proxyUrl);
+    //fetch(proxyUrl)
+    //.then((response) => response.json())
+    //.then((data) => {
+    //const searchResults = data.items;
+    //searchResults.forEach((result) => {
+    ////console.log(result.title, result.link);
+    //console.log(result);
+    //});
+    //})
+    //.catch((error) => console.log(error));
   });
 }
