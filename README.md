@@ -12,7 +12,7 @@ Sustainasearch is a search engine for products and services that are sourced or 
 
 
 ### Dev Dependencies
-(nodejs)[https://nodejs.org]
-(vite)[https://vitejs.dev]
+[nodejs](https://nodejs.org)
+[vite](https://vitejs.dev)
 
 After installing dependencies, run `npx vite` in the root directory.
