@@ -21,7 +21,6 @@ function displayResults(results) {
   });
 }
 
-//search("laptop");
 const searchButton = document.getElementById("image-button");
 
 searchButton.addEventListener("click", function () {

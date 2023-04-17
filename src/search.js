@@ -30,23 +30,16 @@ export default function search(query) {
   ];
 
   vendorlist.forEach((url) => {
-    let encodedQuery = encodeURIComponent(`site:${url} ${query}`);
+    let encodedQuery = encodeURIComponent(`site:${url}+${query}`);
     let queryURL = `${baseSearchUrl}${encodedQuery}`;
     let iframe = document.getElementById("searchResultsFrame");
     iframe.src = queryURL;
 
-    ////console.log(queryURL);
-    //let proxyUrl = `https://cors-anywhere.herokuapp.com/${queryURL}`;
-    ////console.log(proxyUrl);
-    //fetch(proxyUrl)
-    //.then((response) => response.json())
-    //.then((data) => {
-    //const searchResults = data.items;
-    //searchResults.forEach((result) => {
-    ////console.log(result.title, result.link);
-    //console.log(result);
-    //});
-    //})
-    //.catch((error) => console.log(error));
+    /*TODO: Fix search function.
+     * Need to find a better way to get search results from google.
+     * Possible suggestions:
+     *  1. scour google documentation for a how-to on integrating their search results.
+     *  2. use puppeteer or selienum.
+     */
   });
 }
