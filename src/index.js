@@ -21,7 +21,7 @@ function displayResults(results) {
   });
 }
 
-const searchButton = document.getElementById("image-button");
+const searchButton = document.getElementById("logo-button");
 
 searchButton.addEventListener("click", function () {
   const query = document.getElementById("search-bar").value;
